@@ -6,17 +6,10 @@
 
         Name: <input type="text" class="form-control"  required name="name" value='<?php echo $_SESSION['name']; ?>'><br>
         Last name: <input type="text" class="form-control"  required name="lastName" value='<?php echo $_SESSION['lastName']; ?>'><br>
-        telephone: <input type="tel" pattern="^\d*$" id="tel" oninvalid="messageFactory(this)" required class="form-control" name="telephone" value='<?php echo $_SESSION['telephone']; ?>'><br>
+        telephone: <input type="tel"  required class="form-control" name="telephone" value='<?php echo $_SESSION['telephone']; ?>'><br>
         <div class="text-center">       
         <button type="submit" class="btn btn-success text-center">Next</button>
 </div>
 </div>
 </form>
 
-<script> 
-
-function messageFactory(input){
-  if(input.name==="telephone")
-  input.setCustomValidity('telephone should contains only numbers');
-}
-</script>
