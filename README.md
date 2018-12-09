@@ -7,3 +7,4 @@
  - go your address http://www.example.com/mvc/public you should find the form
  
 ### Update 
+ - replace file mvc/app/views/form/view4 with the recent one
